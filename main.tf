@@ -8,7 +8,7 @@ provider "aws" {
 resource "aws_key_pair" "keypair" {
 	provider= "aws.main"
 	key_name = "${var.keyname}"
-	public_key = "$(var.public_key)"
+	public_key = "$(var.rsa_key)"
 }
 
 

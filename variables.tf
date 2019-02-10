@@ -27,9 +27,13 @@ variable "ami" {
   default = "ami-2d39803a"
 }
 
+variable "rsa_key" {
+  description = "SSH Key for the VPC"
+  default = "PUBLIC KEY"
+}
 variable "keyname" {
   description = "SSH Key for the VPC"
-  default = "KEY"
+  default = "KEYNAME"
 }
 variable "ipv6-machine" {
   description = "Shortcut name for ipv6 end machine"
